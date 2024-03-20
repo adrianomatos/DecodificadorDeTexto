@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Responsive Voice -->
+	<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+		rel="stylesheet">
+	<title>Challenge ONE - Decodificador de Texto</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Bem vindo ao Decript</h1>
+		<h2>Aqui você pode criptografar e descriptografar suas mensagens.</h2>
+	</header>
+
+	<main>
+		<section class="sectionPrincipal">
+			<div class="topo">
+				<h3>Insira sua mensagem:</h3>
+				<input class="entradaUsuario" type="text">
+			</div>
+
+			<div class="footer">
+				<h4>*Apenas letras minúsculas e sem acento.</h4>
+				<div class="botoes">
+					<button onclick="criptografar()" id="botaoCriptografar">
+						Criptografar
+					</button>
+					<button onclick="descriptografar()" id="btnDescriptografar">
+						Descriptografar
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="sectionSecundaria">
+
+			<h3>Resultado:</h3>
+			<!-- <img class="imagem" src="assets/NenhumaMensagem.png" alt="Nenhuma mensagem"> -->
+
+			<p id="p"></p>
+
+			<button id="botaoCopiar">Copiar</button>
+
+		</section>
+	</main>
+
+	<script src="app.js" defer></script>
+</body>
+
+</html>
