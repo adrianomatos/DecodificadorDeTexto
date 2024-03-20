@@ -15,19 +15,19 @@
 </head>
 
 <body>
-	<header>
+	<header class="cabecalho">
 		<h1>Bem vindo ao Decript</h1>
 		<h2>Aqui você pode criptografar e descriptografar suas mensagens.</h2>
 	</header>
 
-	<main>
-		<section class="sectionPrincipal">
-			<div class="topo">
+	<main class="conteudo">
+		<section class="conteudo__sectionPrincipal">
+			<div>
 				<h3>Insira sua mensagem:</h3>
 				<input class="entradaUsuario" type="text">
 			</div>
 
-			<div class="footer">
+			<div>
 				<h4>*Apenas letras minúsculas e sem acento.</h4>
 				<div class="botoes">
 					<button onclick="criptografar()" id="botaoCriptografar">
@@ -40,17 +40,22 @@
 			</div>
 		</section>
 
-		<section class="sectionSecundaria">
+		<section class="conteudo__sectionSecundaria">
 
 			<h3>Resultado:</h3>
-			<!-- <img class="imagem" src="assets/NenhumaMensagem.png" alt="Nenhuma mensagem"> -->
 
-			<p id="p"></p>
+			<p id="p">
+				<img class="conteudo__sectionSecundaria__imagem" src="assets/NenhumaMensagem.png" alt="Nenhuma mensagem">
+			</p>
 
 			<button id="botaoCopiar">Copiar</button>
 
 		</section>
 	</main>
+
+	<footer class="rodape">
+		<h4>Adriano Matos</h4>
+	</footer>
 
 	<script src="app.js" defer></script>
 </body>
