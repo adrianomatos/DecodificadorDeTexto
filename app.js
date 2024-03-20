@@ -1,10 +1,10 @@
-// responsiveVoice.speak(
-//   "Bem vindo ao Decript. Insira sua mensagem",
-//   "Brazilian Portuguese Female",
-//   {
-//     rate: 1.2,
-//   }
-// );
+responsiveVoice.speak(
+  "Bem vindo ao Decript. Insira sua mensagem",
+  "Brazilian Portuguese Female",
+  {
+    rate: 1.2,
+  }
+);
 
 function limparInput() {
   textoInserido = document.querySelector("input");
